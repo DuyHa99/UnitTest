@@ -14,20 +14,20 @@ public class Main {
         String msg = "";
         if (a + b > c && b + c > a && a + c > b) {
             if (a == b && b == c) {
-            msg = "Tam giác ??u";
+            msg = "Tam giac deu";
             }
             else if (a*a == b*b + c*c || b*b == a*a + c*c || c*c == a*a+b*b) {
-                msg = "Tam giác vuông";
+                msg = "Tam giac vuong";
             }
             else if (a == b || b == c || c == a) {
-                msg = "Tam giác cân";
+                msg = "Tam giac can";
             }
             else {
-                msg = "Tam giác th??ng";
+                msg = "Tam giac thuong";
             }
         }
         else {
-            msg = "Không ph?i tam giác";
+            msg = "Khong phai tam giac";
         }
         return msg;
     }

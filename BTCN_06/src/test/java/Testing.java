@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import BTCN_06.Main;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -20,22 +21,18 @@ public class Testing {
     public Testing() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
+    @Test
+    public void tc_01() {
+        String rs = Main.typeTriangle(0, 0, 0);
+        String expected = "Khong phai tam giac";
+        assertEquals("My error message",rs, expected);
+	}
+        @Test
+    public void tc_02() {
+        String rs = Main.typeTriangle(3, 4, 5);
+        String expected = "Tam giac vuong";
+        assertEquals("My error message",rs, expected);
+	}
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

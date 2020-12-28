@@ -12,3 +12,10 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
 }
+
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
+}
